@@ -1,0 +1,17 @@
+name: backend-ci
+on:
+  push:
+    paths: ['backend/**', 'AutoHub.slnx', 'global.json']
+  pull_request:
+    paths: ['backend/**', 'AutoHub.slnx', 'global.json']
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: dotnet restore AutoHub.slnx
+      - run: dotnet build AutoHub.slnx --no-restore -c Release
+      - run: dotnet test AutoHub.slnx --no-build -c Release

@@ -1,0 +1,11 @@
+@AutoHub.Api_HostAddress = http://localhost:5152
+
+GET {{AutoHub.Api_HostAddress}}/openapi/v1.json
+Accept: application/json
+
+###
+
+GET {{AutoHub.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

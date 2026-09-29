@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AutoHub.Domain\AutoHub.Domain.csproj" />
+    <ProjectReference Include="..\..\src\AutoHub.Application\AutoHub.Application.csproj" />
+    <ProjectReference Include="..\..\src\AutoHub.Infrastructure\AutoHub.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\AutoHub.Api\AutoHub.Api.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/backend/" />
+  <Folder Name="/backend/src/">
+    <Project Path="backend/src/AutoHub.Admin/AutoHub.Admin.csproj" />
+    <Project Path="backend/src/AutoHub.Api/AutoHub.Api.csproj" />
+    <Project Path="backend/src/AutoHub.Application/AutoHub.Application.csproj" />
+    <Project Path="backend/src/AutoHub.Domain/AutoHub.Domain.csproj" />
+    <Project Path="backend/src/AutoHub.Infrastructure/AutoHub.Infrastructure.csproj" />
+    <Project Path="backend/src/AutoHub.MockServices/AutoHub.MockServices.csproj" />
+    <Project Path="backend/src/AutoHub.Workers/AutoHub.Workers.csproj" />
+  </Folder>
+  <Folder Name="/backend/tests/">
+    <Project Path="backend/tests/AutoHub.ArchitectureTests/AutoHub.ArchitectureTests.csproj" />
+    <Project Path="backend/tests/AutoHub.ContractTests/AutoHub.ContractTests.csproj" />
+    <Project Path="backend/tests/AutoHub.IntegrationTests/AutoHub.IntegrationTests.csproj" />
+    <Project Path="backend/tests/AutoHub.UnitTests/AutoHub.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/solution-items/">
+    <File Path="README.md" />
+    <File Path="CONTRIBUTING.md" />
+    <File Path="global.json" />
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path=".gitattributes" />
+  </Folder>
+</Solution>
